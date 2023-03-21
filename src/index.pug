@@ -1,0 +1,181 @@
+- var pageTitle = "Online TV"
+
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@600;700;800&display=swap")
+    title= pageTitle
+    style 
+      include styles/normalize.css
+      include styles/style.css
+
+  body
+    include partials/header
+      //-   a(href="#").test_a 
+      //-     img(src="./img/marketing/icon.png" alt="").test_img
+      //-     span Coming soon
+
+    section.section-banner
+      img(src="img/banner.JPG" alt="Banner").section-banner__image
+      .container
+        .banner 
+          h1.banner__title Zack Snyder's Justice League
+          .banner-info 
+            span.banner-info__year 2021
+            span.banner-info__age 18+
+            span.banner-info__time 4h 2min
+            span.banner-info__rating 8.8
+          p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Waiyne aligns forces with Diana Prince with plans to recrute a team of metahumans to protect the world from an approaching threat of cathastrophic proportions
+          .banner-control 
+            button.banner-control__btn.banner-control__btn-main 
+              <svg><use href="img/svg/sprite.svg#play"/></svg>Watch
+            button.banner-control__btn.banner-control__btn-more More information
+
+    //- Trending TV Shows
+    section.section 
+      .container 
+        h2.section__h2
+          a(href="#").section__h2-link Trending TV Shows 
+        .movies
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/1.jpg" alt="").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/2.jpg" alt="").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/3.jpg" alt="").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/4.jpg" alt="").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/5.jpg" alt="").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/shows/6.jpg" alt="").movies__img
+        button.section__btn See more 
+
+    //- Trending Movies  
+    section.section
+      .container 
+        h2.section__h2
+          a(href="#").section__h2-link Trending Movies 
+        .movies 
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/1.jpg" alt="movie1").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/2.jpg" alt="movie2").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/3.jpg" alt="movie3").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/4.jpg" alt="movie4").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/5.jpg" alt="movie5").movies__img
+          .movies-item 
+            a(href="#").movies__link
+              img(src="../src/img/movies/6.jpg" alt="movie6").movies__img
+
+    //- Popular Genres 
+    section.section
+      .container 
+        h2.section__h2
+          a(href="#").section__h2-link Popular Genres 
+        .genres 
+          .genres-item.genres-item_romance
+            //- img(src="../src/img/genres/hearts.svg" alt="romance")
+            <svg><use href="img/svg/sprite.svg#hearts"/></svg>
+            h3.genres__title Romance
+
+          .genres-item.genres-item_drama
+            <svg><use href="img/svg/sprite.svg#masks"/></svg>
+
+            h3.genres__title Drama
+
+          .genres-item.genres-item_historical
+            <svg><use href="img/svg/sprite.svg#сlapperboard"/></svg>
+
+            h3.genres__title Historical
+
+          .genres-item.genres-item_action
+            <svg><use href="img/svg/sprite.svg#soldier"/></svg>
+            h3.genres__title Action
+
+          .genres-item.genres-item_sci-fi
+            <svg><use href="img/svg/sprite.svg#rocket"/></svg>
+            h3.genres__title Sci-Fi
+
+          .genres-item.genres-item_horror
+            <svg><use href="img/svg/sprite.svg#ghost"/></svg>
+            h3.genres__title Horror
+
+          .genres-item.genres-item_comedy
+            <svg><use href="img/svg/sprite.svg#smile"/></svg>
+            h3.genres__title Comedy
+
+          .genres-item.genres-item_documentary
+            <svg><use href="img/svg/sprite.svg#castle"/></svg>
+            h3.genres__title Documentary
+
+    //- Actors
+    section.section
+      .container 
+        h2.section__h2
+          a(href="#").section__h2-link Popular Actors & Directors 
+        .actors 
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/1.jpg" alt="actor").actors__img
+            h3.actors__title Samanta Bowen
+
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/2.jpg" alt="actor").actors__img
+            h3.actors__title Rhys Birch 
+
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/3.jpg" alt="actor").actors__img
+            h3.actors__title James Holloway
+
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/4.jpg" alt="actor").actors__img
+            h3.actors__title Joshua Walton
+
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/5.jpg" alt="actor").actors__img
+            h3.actors__title Patrick Elliott
+
+          .actors-item 
+            a(href="#").actors__link 
+              img(src="../src/img/people/6.jpg" alt="actor").actors__img
+            h3.actors__title Morgan O'Neill
+
+    //- marketing
+    section.section 
+      .container 
+        .marketing 
+          .marketing-item 
+            a(href="#").marketing__link
+              img(src="../src/img/marketing/img.jpg" alt="").marketing__img
+          .marketing-item 
+            a(href="#").marketing__link 
+              img(src="../src/img/marketing/icon.png" alt="").marketing__img.right
+              p Coming Soon...
+
+    //- offer
+    section.section 
+      .container 
+        .offer 
+          h2.offer__title Are You New Here ? Don't&nbsp;wait? Register Now.
+          button.offer__btn Register
+
+    include partials/footer

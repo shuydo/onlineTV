@@ -1,0 +1,40 @@
+header 
+  //- svg
+  //-   use(href="img/svg/sprite.svg#search")
+
+  //- svg(width="200px" height="230px" version="1.1" xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+  //-     circle/(cx="100", cy="100", r="100", fill="#000")
+  //-     circle/(cx="100", cy="100", r="95", fill="#ff0")
+
+  .header 
+    a(href="#") 
+      img(src="img/svg/logo.svg" alt="Logo")
+    nav 
+      ul.nav 
+        li.nav-item  
+          a(href="#").nav-link.active Home 
+
+        li.nav-item  
+          a(href="#").nav-link TV Shows
+
+        li.nav-item  
+          a(href="#").nav-link Movies
+
+        li.nav-item  
+          a(href="#").nav-link Series
+
+    ul.control 
+      li.control-item 
+        button.control-btn.control-btn_search
+          svg
+            use(href="img/svg/sprite.svg#search")
+
+      li.control-item 
+        button.control-btn.control-btn_notice
+          svg
+            use(href="img/svg/sprite.svg#bell")
+
+      li.control-item 
+        button.control-btn.control-btn_account
+          svg
+            use(href="img/svg/sprite.svg#user")
