@@ -1,17 +1,7 @@
-//fonts no setup400
-// @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
-// @font-face{
-//     font-family: 'Marcellus';
-//     font-style: normal;
-//     font-weight: normal;
-//     src: url("../fonts/marcellus/Marcellus-Regular.ttf") format("truetype");
-// }
-
-
 $prime-txt-clr: #fff;
 $second-txt-clr: #c2c2c2;
 $bg-color: #000;
+$bg-footer:#101012;
 $white: #fff;
 
 $bg-gradient-safe: rgb(50, 108, 255);
@@ -112,10 +102,7 @@ button {
     }
   }
 }
-// .iconn {
-//   display: block;
-//   background-image: url(img/svg/search.svg);
-// }
+
 .control {
   display: flex;
   align-items: center;
@@ -188,7 +175,7 @@ button {
       content: "";
       width: 1.3rem; //.9
       height: 1.7rem; //1.5
-      background-image: url(img/arrow-right.svg);
+      background-image: url(img/svg/arrow-right.svg);
       background-repeat: no-repeat;
       background-size: cover;
       display: inline-block;
@@ -593,19 +580,6 @@ button {
   // }
 }
 
-// .test_a{
-//   display: block;
-//   width: 720px;
-//   height: 200px;
-//   outline:1px solid red;
-//   display:flex;
-//   flex-direction:column;
-//   width: 500px;
-//   align-items:center;
-// }
-
-// .test_img{  // width: 100%;  // height: 100%;  // object-fit: fill;cover;contain;scale-down;none}
-
 .offer {
   max-width: 122.4rem;
   margin: 0 auto;
@@ -649,14 +623,13 @@ button {
 }
 
 footer {
-  background-color: #101012;
+  background-color: $bg-footer;
   padding: 7rem 0 5rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   max-width: 144rem;
   padding: 1.5rem;
   margin: 0 auto;
